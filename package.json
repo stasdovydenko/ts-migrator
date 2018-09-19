@@ -1,23 +1,22 @@
 {
-  "name": "typespring",
-  "version": "0.0.8",
-  "description": "typespring",
+  "name": "ts-migrator",
+  "version": "0.0.1",
+  "description": "ts-migrator",
   "main": "lib/index.js",
   "scripts": {
-    "build": "tsc",
-    "test": "node ./lib/test/index.js"
+    "build": "tsc"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/stasdovydenko/typespring.git"
+    "url": "git+https://github.com/stasdovydenko/ts-migrator.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/stasdovydenko/typespring/issues"
+    "url": "https://github.com/stasdovydenko/ts-migrator/issues"
   },
-  "homepage": "https://github.com/stasdovydenko/typespring#readme",
+  "homepage": "https://github.com/stasdovydenko/ts-migrator#readme",
   "dependencies": {
     "mongodb": "^3.1.4"
   },

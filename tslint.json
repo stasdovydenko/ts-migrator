@@ -5,6 +5,10 @@
     ],
     "jsRules": {},
     "rules": {
+        "arrow-parens": [
+            false,
+            "ban-single-arg-parens"
+        ],
         "quotemark": [
             true,
             "single",
@@ -32,6 +36,8 @@
             "static-before-instance",
             "variables-before-functions"
         ],
+        "no-string-literal": false,
+        "prefer-for-of": false,
         "space-before-function-paren": [
             false,
             {
@@ -81,7 +87,7 @@
         "max-classes-per-file": [
             false
         ],
-        "no-console": false,
+        "no-console": false
     },
     "rulesDirectory": [
         "node_modules/codelyzer"
