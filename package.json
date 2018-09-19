@@ -1,8 +1,9 @@
 {
   "name": "ts-migrator",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "ts-migrator",
-  "main": "lib/index.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
     "build": "tsc"
   },
@@ -24,5 +25,5 @@
     "ts-node": "^7.0.1",
     "typescript": "^2.9.2"
   },
-  "typings": "lib/index.d.ts"
+  "typings": "dist/index.d.ts"
 }
