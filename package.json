@@ -1,0 +1,29 @@
+{
+  "name": "typespring",
+  "version": "0.0.8",
+  "description": "typespring",
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "tsc",
+    "test": "node ./lib/test/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stasdovydenko/typespring.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/stasdovydenko/typespring/issues"
+  },
+  "homepage": "https://github.com/stasdovydenko/typespring#readme",
+  "dependencies": {
+    "mongodb": "^3.1.4"
+  },
+  "devDependencies": {
+    "ts-node": "^7.0.1",
+    "typescript": "^2.9.2"
+  },
+  "typings": "lib/index.d.ts"
+}
