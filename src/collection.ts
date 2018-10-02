@@ -4,7 +4,7 @@ export interface IMigratorCollectionParams {
     name: string;
     schema?: Object;
     items?: Object[];
-    indexes?: IndexOptions[];
+    indexes?: { key: Object, options: IndexOptions }[];
 }
 
 export function Collection(params: IMigratorCollectionParams) {
