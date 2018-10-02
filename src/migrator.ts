@@ -67,10 +67,9 @@ export function Migrator(params: IMigratorParams) {
                             await db.collection(c.name).insertMany(c.items);
                         }
                         if (c.indexes && c.indexes.length) {
-                            await db.runCommand({
-                                createIndexes: c.name,
-                                indexes: c.indexes,
-                            });
+                            for (const i of c.indexes) {
+                                await db.collection(c.name).createIndex(i.index, i.options || {});
+                            }
                         }
                         resolve();
                     } catch (e) {

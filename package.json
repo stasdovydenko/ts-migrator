@@ -1,6 +1,6 @@
 {
   "name": "ts-migrator",
-  "version": "0.0.5",
+  "version": "0.0.7",
   "description": "ts-migrator",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
