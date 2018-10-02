@@ -37,7 +37,7 @@ export function Migrator(params: IMigratorParams) {
                 this.disconnect();
             }
 
-            connect = (): Promise<void> => {
+            connect = (): Promise<MongoClient> => {
                 return MongoClient.connect(this.mongoUrl, { useNewUrlParser: true });
             }
 
@@ -65,6 +65,12 @@ export function Migrator(params: IMigratorParams) {
                         await db.createCollection(c.name, options);
                         if (c.items && c.items.length) {
                             await db.collection(c.name).insertMany(c.items);
+                        }
+                        if (c.indexes && c.indexes.length) {
+                            await db.runCommand({
+                                createIndexes: c.name,
+                                indexes: c.indexes,
+                            });
                         }
                         resolve();
                     } catch (e) {

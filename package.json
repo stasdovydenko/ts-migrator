@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/stasdovydenko/ts-migrator#readme",
   "dependencies": {
+    "@types/mongodb": "^3.1.9",
     "mongodb": "^3.1.4"
   },
   "devDependencies": {

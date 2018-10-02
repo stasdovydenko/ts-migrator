@@ -1,7 +1,10 @@
+import { IndexOptions } from "mongodb";
+
 export interface IMigratorCollectionParams {
     name: string;
     schema?: Object;
     items?: Object[];
+    indexes?: IndexOptions[];
 }
 
 export function Collection(params: IMigratorCollectionParams) {
@@ -10,6 +13,7 @@ export function Collection(params: IMigratorCollectionParams) {
             name = params.name;
             schema = params.schema;
             items = params.items;
+            indexes = params.indexes;
         };
     };
 }
